@@ -1,0 +1,242 @@
+/*Спецификация*/
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*Первый экран*/
+
+.header {
+  background: #FFDC00;
+  color: #000;
+  padding-top: 58px;
+  padding-bottom: 105px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  color: #000;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul, li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  margin-top: 8px;
+
+}
+
+.menu__item {
+  margin: 0 57px;
+}
+
+.menu__item a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+}
+
+.offer {
+  margin-top: 117px;
+}
+
+.offer__title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.offer__intro {
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+.offer__text {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #555;
+  width: 400px;
+}
+
+.icons__item a {
+  color: #000;
+  font-size: 42px;
+  margin-right: 37px;
+}
+
+.icons__item a {
+  transition: all 0.3s;
+}
+
+.icons__item a:hover {
+  text-decoration: none;
+  color: #686868;
+  transform: scale(2);
+}
+
+.ipad {
+  margin-top: 66px;
+  display: block;
+  margin: 60px auto 0;
+}
+
+/*Второй экран*/
+
+.title {
+  padding-top: 110px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.title__main {
+  font-size: 32px;
+}
+
+.title__text {
+  font-size: 20px;
+  color: #555;
+  width: 780px;
+  margin: 0 auto;
+}
+
+.feature__title {
+  font-size: 22px;
+}
+
+.feature__text {
+  font-size: 16px;
+  color: #555;
+}
+
+.feature__icon {
+  font-size: 50px;
+  margin-right: 37px;
+  color: #000;
+}
+
+.feature {
+  margin-bottom: 76px;
+}
+
+/* Трейтий экран */
+
+.yellow {
+  color: #FFDC00;
+}
+
+.touch {
+  background: #000;
+  color: #fff;
+}
+
+.form {
+  background: #000;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form__input {
+  font-family: 'PT Sans', sans-serif;
+  border-radius: 6px;
+  width: 580px;
+  padding: 14px 0;
+  margin-right: 21px;
+  border: 0;
+  padding-left: 23px;
+  outline: none;
+}
+
+.form__btn {
+  font-family: 'PT Sans', sans-serif;
+  background: #fcdb00;
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  width: 126px;
+  border: 0;
+  padding: 14px 0;
+
+}
+
+/*Футер*/
+
+.footer {
+  background: #000;
+  padding-bottom: 105px
+}
+
+.contact {
+  font-size: 16px;
+  color: #fff;
+  width: 182px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 56px;
+}
+
+/*Nee*/
+
+@media screen and (max-width: 992px) {
+  .logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .offer {
+    text-align: center;
+  }
+  .offer__text {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    width: auto;
+  }
+  .icons {
+    justify-content: center;
+  }
+
+  .icons__item:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .form__input {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .form__btn {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .title__text {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ipad {
+    width: 100%;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .menu__item {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
